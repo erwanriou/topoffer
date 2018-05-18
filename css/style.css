@@ -1,0 +1,432 @@
+/* ALL the basic css configs*/
+
+body {
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER of the menu research, filters and menues elements */
+#database_wrapper {
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  z-index: 99;
+  background-color: white;
+}
+
+header .leftside-menu, header .rightside-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+header .filters, header .layout {
+  display: flex;
+}
+
+header .layout {
+  margin-left: 1.8rem;
+}
+
+.layout .fa-bars, .layout .fa-th-large  {
+  font-size: 1.3rem;
+  align-self: center;
+  color: #aaa;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 0 0.2rem;
+}
+
+.layout .fa-bars:hover, .layout .fa-th-large:hover {
+  cursor: pointer;
+  background-color: rgba(0, 89, 251, 0.60);
+  color: white;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters span {
+  padding: 0.4rem;
+}
+
+.selectize-input {
+  width: 30rem;
+  padding: 0.35rem;
+  border-radius: 0.25rem;
+}
+
+.selectize-input > * {
+  vertical-align: middle;
+}
+
+.selectize-dropdown, .selectize-input, .selectize-input input {
+  font-size: 11px;
+
+}
+
+#database_length, #database_filter {
+  display: flex;
+  padding-left: 2rem;
+}
+
+.form-control {
+  width: 10rem;
+}
+
+.col-sm-5, .col-sm-7 {
+  position: relative;
+  padding: 1rem 4rem;
+}
+/* CONTENT box layout styling */
+
+.content {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 13%;
+  height: 18rem;
+  margin: 0.5rem;
+}
+
+.box i {
+  color: #ccc;
+}
+.box .image-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.box .box-rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box .box-rightside p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.box .image-box .image-div {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid #bbb;
+}
+
+.box .image-box button {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.box .image-box span {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.box .image-box span:hover {
+  background-color: #ddd;
+}
+
+.box .title-box {
+  text-align: left;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .promote-box {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 89, 251, 0.60);
+  cursor: pointer;
+}
+
+.box .promote-box:hover {
+  background-color: rgba(0, 89, 251, 0.9);
+}
+
+.box .data-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .data-box .column {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box .data-box .column span {
+  padding: 0.5rem 0;
+}
+
+/* CONTENT the css to apply in top of the bootstrap table script */
+
+.table-striped>tbody>tr:nth-child(-n+3) {
+  background-color: rgba(155, 146, 184, 0.20);
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border-bottom-width: 0px;
+}
+
+.fix-size {
+  max-width: 3.5rem !important;
+}
+
+.table>tbody>tr>td {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 4rem;
+  vertical-align: middle;
+}
+
+.fa {
+  font-size: 0.9rem;
+  display: inline-flex;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.dataTable th {
+  box-sizing: border-box;
+}
+
+.data {
+  text-align: center;
+  overflow: hidden;
+}
+
+.data .fix-size img {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+.fa-star, .fa-star-o {
+  color: #aaa;
+}
+
+td button {
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgba(0, 89, 251, 0.60);
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: rgba(0, 89, 251, 0.90);
+}
+
+td .new-offer, .box .image-box button {
+  background-color: rgba(255, 134, 63, 0.60);
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+
+td .new-offer:hover, .box .image-box button:hover {
+  background-color: rgba(255, 134, 63, 1);
+}
+
+#network:first-child {
+  display: none;
+}
+
+
+/* FOOTER the footer as the data detail will be configurated in fonction of the toggle function */
+
+footer {
+  display: none;
+  position: sticky;
+  z-index: 99;
+  bottom: 0;
+  height: 20rem;
+  border-top: 1px solid #ddd;
+  background-color: white;
+  overflow: hidden;
+}
+#data1 {
+  display: none
+}
+.preview-title {
+  display: flex;
+}
+
+footer h1 {
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  width: 40rem;
+  margin: 1rem 0;
+}
+
+footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.preview-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chart-container {
+  position: relative;
+  height: 13rem;
+  width: 22rem;
+}
+
+.country-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 40rem;
+}
+
+.country-table th, .country-table tr {
+  width: 9.09%;
+}
+
+.table-titles {
+  text-transform: uppercase;
+  background-color: #8CA4FB;
+  color: white;
+  height: 4rem;
+  text-align: center
+}
+
+.table-data {
+  height: 2rem;
+}
+
+/* MEDIA */
+
+@media (max-width: 1700px) and (min-width: 1500px) {
+  .box {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1300px) {
+  .box {
+    width: 18%;
+  }
+  .country-table {
+    width: 30rem;
+  }
+  .table-titles {
+    height: 2rem;
+  }
+  .table-data {
+    height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+  .box {
+    width: 22%;
+  }
+  .country-table {
+    width: 20rem;
+  }
+  .table-titles {
+    height: 2rem;
+  }
+  .table-data {
+    height: 2rem;
+  }
+  .chart-container {
+    position: relative;
+    height: 10rem;
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+  .box {
+    width: 45%;
+  }
+  .country-table {
+    width: 20rem;
+  }
+  .table-titles {
+    height: 2rem;
+  }
+  .table-data {
+    height: 2rem;
+  }
+  .chart-container {
+    position: relative;
+    height: 10rem;
+    width: 15rem;
+  }
+  #landingpage-preview {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 90%;
+  }
+  .country-table {
+    width: 20rem;
+  }
+  .table-titles {
+    height: 2rem;
+  }
+  .table-data {
+    height: 2rem;
+  }
+  .chart-container {
+    position: relative;
+    height: 10rem;
+    width: 15rem;
+  }
+  #landingpage-preview, #browsers-preview {
+    display: none;
+  }
+}
